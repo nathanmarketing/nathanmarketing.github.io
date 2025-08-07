@@ -1,32 +1,14 @@
-<!--
-  This file provides a modern redesign for NathanMarketing's homepage.  It takes
-  inspiration from professional SaaS landing pages with dark themes, large
-  typography and clear call‑to‑actions.  The page is mobile responsive and
-  uses only vanilla HTML/CSS to ensure it works on GitHub Pages.
-
-  To use this redesign on your site, copy the contents of this file over
-  your existing `index.html` and commit it to your GitHub repository.  All
-  styles are contained in the `<style>` block for simplicity; you may move
-  them into a separate CSS file if you prefer.
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF‑8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NathanMarketing – Persuasive Copywriting</title>
-  <!-- Import Google Fonts for modern typography -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <!-- Font Awesome for icons (loaded via CDN) -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    /* Reset default margins/paddings */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Poppins', sans-serif;
       line-height: 1.6;
@@ -50,28 +32,12 @@
       font-size: 1.1rem;
       color: #a2b8c5;
     }
-    /* Hero Section */
     .hero {
       position: relative;
       overflow: hidden;
       padding: 6rem 1rem 5rem;
       text-align: center;
       background: radial-gradient(circle at 50% 30%, #0a192f 0%, #020a13 70%);
-    }
-    .hero .logo {
-      width: 64px;
-      height: 64px;
-      margin: 0 auto 2rem;
-      background: linear-gradient(135deg, #34c8ff 0%, #5a78ff 100%);
-      border-radius: 20%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    }
-    .hero .logo i {
-      font-size: 1.8rem;
-      color: #ffffff;
     }
     .hero h2 {
       font-size: clamp(2rem, 5vw, 4rem);
@@ -104,7 +70,6 @@
     .cta-button:hover {
       background: #53a5e7;
     }
-    /* Founder's note section */
     .founder-note {
       padding: 5rem 1rem 4rem;
       text-align: center;
@@ -138,7 +103,6 @@
       font-size: 0.9rem;
       color: #6b7d92;
     }
-    /* Benefits section */
     .benefits {
       padding: 4rem 1rem 6rem;
       background: #01060d;
@@ -188,7 +152,6 @@
       color: #9bacbf;
       line-height: 1.6;
     }
-    /* Footer */
     footer {
       background: #01060d;
       padding: 2rem 1rem;
@@ -196,13 +159,13 @@
       color: #6b7d92;
       font-size: 0.9rem;
     }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
     @media (max-width: 600px) {
-      .hero h2 {
-        font-size: 2.5rem;
-      }
-      .hero h3 {
-        font-size: 1.5rem;
-      }
+      .hero h2 { font-size: 2.5rem; }
+      .hero h3 { font-size: 1.5rem; }
     }
   </style>
 </head>
@@ -211,21 +174,21 @@
     <h1>NathanMarketing</h1>
     <p>Persuasive Copywriting for Coaches, Creators &amp; Founders</p>
   </header>
-  <!-- Hero Section with bold messaging and CTA -->
+
   <section class="hero">
     <div class="logo">
-      <i class="fas fa-feather-alt"></i>
+      <img src="nathan-logo.png" alt="NathanMarketing Logo"
+           style="max-width: 120px; height: auto; border-radius: 20px;
+                  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+                  animation: fadeIn 1.2s ease-out;" />
     </div>
     <h2>Words That Sell <span>Without Being Salesy</span></h2>
     <h3>Turn browsers into buyers with magnetic copywriting</h3>
     <a href="#contact" class="cta-button">Message Us Now</a>
   </section>
-  <!-- Founder's note / mission statement -->
+
   <section class="founder-note" id="founder-note">
-    <div class="badge">
-      <i class="fas fa-star"></i>
-      We Analyze Your Business
-    </div>
+    <div class="badge"><i class="fas fa-star"></i> We Analyze Your Business</div>
     <p>
       We automate your marketing systems to save you precious hours each week
       and craft copy that consistently generates revenue. Our process blends
@@ -234,7 +197,7 @@
     </p>
     <cite>— Nathan, Founder &amp; Lead Copywriter</cite>
   </section>
-  <!-- Benefits section -->
+
   <section class="benefits">
     <h3>Why Choose Us?</h3>
     <p class="subtitle">Everything you need to optimise, scale and grow</p>
@@ -256,11 +219,11 @@
       </div>
     </div>
   </section>
-  <!-- Footer with basic contact details -->
+
   <footer id="contact">
     <p>
       Need help or a custom quote? DM “Copy” to <a href="https://instagram.com/nathanmarketing" style="color:#7dc3ff; text-decoration:underline;">@nathanmarketing</a> on Instagram
-      or email us at <a href="mailto:info@nathanmarketing.io" style="color:#7dc3ff; text-decoration:underline;">info@nathanmarketing.io</a>
+      or email us at <a href="mailto:nathanweleliat@gmail.com" style="color:#7dc3ff; text-decoration:underline;">nathanweleliat@gmail.com</a>
     </p>
     <p>&copy; 2025 NathanMarketing</p>
   </footer>
